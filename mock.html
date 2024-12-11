@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Provider Profile</title>
+    <link rel="stylesheet" href="mock.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1>Service Provider Profile</h1>
+    </header>
+
+    <section class="profile-container">
+        <h2>Your Profile</h2>
+
+
+        <!-- Form to Update Profile Data -->
+        <h2>Update Your Profile</h2>
+        <form id="profile-form" action="#" method="post">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="contact">Contact Number</label>
+            <input type="tel" id="contact" name="contact" placeholder="Enter your contact number" required>
+
+            <label for="locality">Locality</label>
+            <input type="text" id="locality" name="locality" placeholder="Enter your locality" required>
+
+            <label for="job-preference">Job Preference</label>
+            <select id="job-preference" name="job-preference" required>
+                <option value="" disabled selected>-- Select a Job --</option>
+                <option value="Plumber">Plumber</option>
+                <option value="Electrician">Electrician</option>
+                <option value="Carpenter">Carpenter</option>
+                <option value="House Cleaner">House Cleaner</option>
+                <option value="Tutor">Tutor</option>
+                <option value="Painter">Painter</option>
+                <option value="Mechanic">Mechanic</option>
+            </select>
+
+            <label for="job-specification">Job Specification</label>
+            <input type="text" id="job-specification" name="job-specification" placeholder="Specify your job role (e.g., Residential Plumber, Appliance Electrician)" required>
+
+           
+            <button type="submit"><a href="home1.html">CREATE</a></button>
+        </form>
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

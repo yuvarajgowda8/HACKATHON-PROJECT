@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Payment Integration</title>
+    <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+
+<div class="container">
+    <!-- Payment Form -->
+    <div class="payment-form" id="payment-form">
+        <h1>Make a Payment</h1>
+        
+        <div class="payment-methods">
+            <label class="method">
+                <input type="radio" name="payment_method" value="UPI" checked>
+                <span>UPI</span>
+            </label>
+
+            <label class="method">
+                <input type="radio" name="payment_method" value="CARD">
+                <span>Card</span>
+            </label>
+
+            <label class="method">
+                <input type="radio" name="payment_method" value="WALLET">
+                <span>Wallet</span>
+            </label>
+        </div>
+
+        <div class="payment-section" id="upi-section">
+            <input type="text" id="upi-id" placeholder="Enter UPI ID" required>
+        </div>
+
+        <div class="payment-section hidden" id="card-section">
+            <input type="text" id="card-number" placeholder="Card Number" maxlength="16" required>
+            <input type="text" id="card-expiry" placeholder="MM/YY" maxlength="5" required>
+            <input type="text" id="card-cvc" placeholder="CVC" maxlength="3" required>
+        </div>
+
+        <div class="payment-section hidden" id="wallet-section">
+            <select id="wallet-select">
+                <option value="paytm">Paytm</option>
+                <option value="googlepay">Google Pay</option>
+                <option value="phonepe">PhonePe</option>
+            </select>
+        </div>
+
+        <button class="pay-button" id="pay-button">Pay Now</button>
+    </div>
+
+    <!-- Payment Success Page -->
+    <div class="payment-success hidden" id="payment-success">
+        <h2>🎉 Payment Successful!</h2>
+        <p>Payment ID: <span id="payment-id"></span></p>
+        <p>Amount Paid: ₹<span id="amount-paid"></span></p>
+        <button class="pay-button" onclick="restartPayment()">Make Another Payment</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

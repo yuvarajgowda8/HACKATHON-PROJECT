@@ -1,0 +1,102 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Container to hold the boxes */
+  .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  
+  
+  .box {
+    width: 250px;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .customer-box {
+    background-color: #28a745;  /* Green */
+    color: white;
+  }
+  
+  .service-provider-box {
+    background-color: #007bff;  /* Blue */
+    color: white;
+  }
+  
+  /* Styling for text inside the box */
+  h2 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  p {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('ASSETS/on-demand-home-services-main.jpg'); /* Path to your image */
+  background-size: cover; /* Cover the entire page */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent repeating */
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.App {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8); /* Optional: To make the content area readable */
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+}
+
+.App-header nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+.App-header nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+}

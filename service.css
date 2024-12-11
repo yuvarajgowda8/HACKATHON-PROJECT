@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Container for the form */
+  .container {
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  /* Form title */
+  h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Job sections */
+  .job-section {
+    margin-bottom: 20px;
+  }
+  
+  .job-section h3 {
+    font-size: 22px;
+    color: #007bff;
+  }
+  
+  .subjobs {
+    margin-top: 10px;
+    padding-left: 20px;
+  }
+  
+  label {
+    font-size: 16px;
+    margin-bottom: 10px;
+    display: block;
+    cursor: pointer;
+  }
+  
+  /* Submit button */
+  .submit-btn {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  

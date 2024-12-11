@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Listings</title>
+    <link rel="stylesheet" href="chat.css">
+</head>
+<body>
+
+<header>
+    <h1>Service Listings</h1>
+    <p>Find and connect with the best service providers in your area</p>
+</header>
+
+<nav>
+    <a href="#services">Services</a>
+    <a href="#chat">Chat & Communication</a>
+    <a href="#contact">Contact Us</a>
+</nav>
+
+<!-- Service Listings Section -->
+<section id="services" class="service-container">
+    <h2>Available Services</h2>
+    <div class="service-card">
+        <h3>AC Technician</h3>
+        <p>Expert in AC installation and repair.</p>
+        <button class="btn">View Details</button>
+    </div>
+
+    <div class="service-card">
+        <h3>Electrician</h3>
+        <p>Professional wiring, repairs, and installation.</p>
+        <button class="btn">View Details</button>
+    </div>
+
+    <div class="service-card">
+        <h3>Plumber</h3>
+        <p>Fix leaks, clogs, and install plumbing fixtures.</p>
+        <button class="btn">View Details</button>
+    </div>
+</section>
+
+<!-- Chat & Communication Section -->
+<section id="chat" class="chat-section">
+    <h2>Chat & Communication</h2>
+
+    <!-- Chat Box -->
+    <div class="chat-container">
+        <div class="chat-header">
+            <h3>Chat with Service Provider</h3>
+        </div>
+
+        <div class="chat-messages" id="chat-messages">
+            <!-- Chat messages will be dynamically inserted here -->
+        </div>
+
+        <div class="chat-input">
+            <input type="text" id="message-input" placeholder="Type your message...">
+            <button id="send-button">Send</button>
+        </div>
+    </div>
+
+    <!-- Voice and Video Call Section -->
+    <div class="call-section">
+        <h3>Voice & Video Call Support</h3>
+        <button class="btn call-btn" id="voice-call-btn">Start Voice Call</button>
+        <button class="btn call-btn" id="video-call-btn">Start Video Call</button>
+    </div>
+</section>
+
+<footer>
+    <p>© 2024 Service Listings. All Rights Reserved.</p>
+</footer>
+
+<script src="chat.js"></script>
+</body>
+</html>

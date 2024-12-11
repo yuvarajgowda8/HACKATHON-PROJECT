@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Service Provider Job Selection</title>
+  <link rel="stylesheet" href="service.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="form-container">
+      <h2>Select Your Jobs and Subjobs</h2>
+
+      <!-- Form for Service Providers -->
+      <form id="service-provider-form">
+        
+        <!-- Main Job: AC Technician -->
+        <div class="job-section">
+          <h3>AC Technician</h3>
+          <div class="subjobs">
+            <label><input type="checkbox" name="ac-job" value="installation"> Installation</label><br>
+            <label><input type="checkbox" name="ac-job" value="repair"> Repair</label><br>
+            <label><input type="checkbox" name="ac-job" value="maintenance"> Maintenance</label><br>
+            <label><input type="checkbox" name="ac-job" value="cleaning"> Cleaning</label><br>
+          </div>
+        </div>
+
+        <!-- Main Job: Electrician -->
+        <div class="job-section">
+          <h3>Electrician</h3>
+          <div class="subjobs">
+            <label><input type="checkbox" name="electrician-job" value="wiring"> Wiring</label><br>
+            <label><input type="checkbox" name="electrician-job" value="repair"> Repair</label><br>
+            <label><input type="checkbox" name="electrician-job" value="installation"> Installation</label><br>
+            <label><input type="checkbox" name="electrician-job" value="inspection"> Inspection</label><br>
+          </div>
+        </div>
+
+        <!-- Main Job: Plumber -->
+        <div class="job-section">
+          <h3>Plumber</h3>
+          <div class="subjobs">
+            <label><input type="checkbox" name="plumber-job" value="pipe-fix"> Pipe Fix</label><br>
+            <label><input type="checkbox" name="plumber-job" value="leak-repair"> Leak Repair</label><br>
+            <label><input type="checkbox" name="plumber-job" value="installation"> Installation</label><br>
+            <label><input type="checkbox" name="plumber-job" value="drain-cleaning"> Drain Cleaning</label><br>
+          </div>
+        </div>
+
+        <!-- Main Job: Carpenter -->
+        <div class="job-section">
+          <h3>Carpenter</h3>
+          <div class="subjobs">
+            <label><input type="checkbox" name="carpenter-job" value="furniture-making"> Furniture Making</label><br>
+            <label><input type="checkbox" name="carpenter-job" value="repairs"> Repairs</label><br>
+            <label><input type="checkbox" name="carpenter-job" value="installation"> Installation</label><br>
+            <label><input type="checkbox" name="carpenter-job" value="custom-design"> Custom Design</label><br>
+          </div>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="submit-btn">
+          <button type="submit">Submit</button>
+        </div>
+        
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

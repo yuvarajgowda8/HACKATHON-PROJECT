@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Listings</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <header>
+        <h1>Our Services</h1>
+        <nav>
+            <a href="#categories">Categories</a>
+            <a href="#services">Services</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Search and Filter Section -->
+        <section id="search-filter">
+            <h2>Find the Right Service</h2>
+            <input type="text" id="search-bar" placeholder="Search for services..." oninput="filterServices()">
+            <select id="category-filter" onchange="filterServices()">
+                <option value="">Select Category</option>
+                <option value="mechanical">Mechanical</option>
+                <option value="carpentry">Carpentry</option>
+                <option value="electrical">Electrical</option>
+                <option value="plumbing">Plumbing</option>
+                <option value="ac">AC Technicians</option>
+                <option value="appliances">Home Appliances Repair</option>
+                <option value="cleaning">Cleaning</option>
+                <option value="pest-control">Pest Control</option>
+                <option value="painting">Building Paintings</option>
+            </select>
+        </section>
+
+        <!-- Service Categories -->
+        <section id="categories">
+            <h2>Service Categories</h2>
+            <div class="categories-list">
+                <div class="category-item" data-category="mechanical">
+                  <a href="temp.html"><img src="https://tse4.mm.bing.net/th?id=OIP.DfLFUKFxPcPgXGcVRCsAVgHaFj&pid=Api&P=0&h=180" alt="Mechanical Service"></a>
+                    <h3>Mechanical</h3>
+                    <p>Engines, machines, and mechanical system repairs.</p>
+                </div>
+                <div class="category-item" data-category="carpentry">
+                    <img src="https://tse1.mm.bing.net/th?id=OIP.KONnFamWmw_hcdydwBIW-gHaE7&pid=Api&P=0&h=180" alt="Carpentry Service">
+                    <h3>Carpentry</h3>
+                    <p>Woodworking and custom furniture construction.</p>
+                </div>
+                <div class="category-item" data-category="electrical">
+                    <img src="https://tse1.mm.bing.net/th?id=OIP.sr895hNNu4fx3R3KDuheuwHaEK&pid=Api&P=0&h=180" alt="Electrical Service">
+                    <h3>Electrical</h3>
+                    <p>Wiring, electrical systems, and appliance fixes.</p>
+                </div>
+                <div class="category-item" data-category="plumbing">
+                    <img src="https://tse1.mm.bing.net/th?id=OIP.ioNuitaNRc4qS167nJpLjwHaEc&pid=Api&P=0&h=180" alt="Plumbing Service">
+                    <h3>Plumbing</h3>
+                    <p>Pipes, leaks, and water system repairs.</p>
+                </div>
+                <div class="category-item" data-category="ac">
+                    <img src="https://tse4.mm.bing.net/th?id=OIP.EcYhwqsAIhqKFr-aEhgmHAHaEw&pid=Api&P=0&h=180" alt="AC Technician Service">
+                    <h3>AC Technicians</h3>
+                    <p>Air conditioner maintenance, repairs, and installation.</p>
+                </div>
+                <div class="category-item" data-category="appliances">
+                    <img src="https://tse1.mm.bing.net/th?id=OIP.4QsHmXWWmia52SX3oBZT4gHaFj&pid=Api&P=0&h=180" alt="Appliance Repair Service">
+                    <h3>Home Appliances Repair</h3>
+                    <p>Repair services for household appliances like washing machines, fridges, etc.</p>
+                </div>
+                <div class="category-item" data-category="cleaning">
+                    <img src="https://tse1.mm.bing.net/th?id=OIP.mM9s5aM-m9QHyGL3fBkqeAHaD7&pid=Api&P=0&h=180" alt="Cleaning Service">
+                    <h3>Cleaning</h3>
+                    <p>Cleaning services for homes, offices, and businesses.</p>
+                </div>
+                <div class="category-item" data-category="pest-control">
+                    <img src="https://tse3.mm.bing.net/th?id=OIP.8DFEx7jYQIn8BbJBmxfBqgHaE8&pid=Api&P=0&h=180" alt="Pest Control Service">
+                    <h3>Pest Control</h3>
+                    <p>Services for eliminating pests in homes and offices.</p>
+                </div>
+                <div class="category-item" data-category="painting">
+                    <img src="https://tse3.mm.bing.net/th?id=OIP.cMYZVi_MOfCY57ko5V8txAHaEK&pid=Api&P=0&h=180" alt="Building Painting Service">
+                    <h3>Building Paintings</h3>
+                    <p>Interior and exterior painting services for homes and buildings.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services List -->
+        <section id="services">
+            <h2>Available Services</h2>
+            <div class="service-list" id="service-list">
+                <!-- Dynamic services will be listed here -->
+            </div>
+        </section>
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

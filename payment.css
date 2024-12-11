@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f3f7;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+  }
+  
+  .payment-form, .payment-success {
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px #d9d9d9, -10px -10px 20px #ffffff;
+    padding: 40px;
+    text-align: center;
+    animation: slideIn 0.5s ease;
+  }
+  
+  @keyframes slideIn {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+  }
+  
+  h1, h2 {
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+  
+  .payment-methods {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .method {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .method input[type="radio"] {
+    display: none;
+  }
+  
+  .method span {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e0e0e0;
+    border-radius: 20px;
+    box-shadow: inset 5px 5px 10px #c1c1c1, inset -5px -5px 10px #ffffff;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .method input[type="radio"]:checked + span {
+    background-color: #4CAF50;
+    color: #ffffff;
+  }
+  
+  .payment-section input, .payment-section select {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: none;
+    background: #f2f3f7;
+    box-shadow: inset 5px 5px 10px #d9d9d9, inset -5px -5px 10px #ffffff;
+  }
+  
+  .pay-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    width: 100%;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s;
+    border: none;
+    box-shadow: 5px 5px 10px #b8b8b8, -5px -5px 10px #ffffff;
+  }
+  
+  .pay-button:hover {
+    background-color: #3e8e41;
+    transform: translateY(-2px);
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .payment-success h2 {
+    color: #28a745;
+  }
